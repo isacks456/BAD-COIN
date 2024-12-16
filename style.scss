@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: mediumpurple;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -76,11 +80,78 @@
           cursor: pointer;
         }
 
+
+
+      }
+
+    }
+
+    .btn {
+      padding: 8px;
+      font-size: 1.1em;
+      width: 114px;
+      border: none;
+      border-radius: 4px;
+      border-color: darkmagenta;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      border: 1px solid silver;
+      transition: all .5s ease;
+      user-select: none;
+      &:hover {
+        transform: scale(1.1);
       }
 
     }
 
   }
 
+  .profile {
+    width: 314px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    right: 4%;
+    top: 20%;
+    border-radius: 14px;
+    padding: 14px;
+    display: none;
+    user-select: none;
+
+    .score{
+      display: flex;
+      gap: 4px;
+      user-select: none;
+    }
+
+    .levelUp1 {
+      position: absolute;
+      top: 18%;
+      display: flex;
+      gap: 4px;
+    }
+
+    .levelUp2 {
+      color: saddlebrown;
+    }
+
+    .close {
+      color: darkred;
+      background-color: aliceblue;
+      border-radius: 4px;
+      padding: 4px;
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+      transition: all .5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+
+
+  }
 
 }
